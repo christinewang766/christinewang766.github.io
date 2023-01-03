@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.311c3478.css",
-    "main.js": "/static/js/main.67539815.js",
+    "main.js": "/static/js/main.0995e2cf.js",
     "static/media/video.mp4": "/static/media/video.bed87221978ded0bbef1.mp4",
     "static/media/cuteDemo.MP4": "/static/media/cuteDemo.1bc56f82ac7f3827714b.MP4",
     "static/media/collage.png": "/static/media/collage.7a7a5d2de6dae60390f7.png",
@@ -33,6 +33,7 @@
     "static/media/snailPot.png": "/static/media/snailPot.f60e04d2f8a02bdc6dfb.png",
     "static/media/frogPot.png": "/static/media/frogPot.3dcedc97b0e151987470.png",
     "static/media/ditchFall.jpg": "/static/media/ditchFall.8fa2824288702b5ece38.jpg",
+    "static/media/home.png": "/static/media/home.c029a3ef8c447ce07b22.png",
     "static/media/cuteHex.gif": "/static/media/cuteHex.5258741211ef9efd91d2.gif",
     "static/media/flowerTofuTurnip.jpg": "/static/media/flowerTofuTurnip.9e43f5a3fc6169ec9ecf.jpg",
     "static/media/textBox.png": "/static/media/textBox.53b78912740de201ad1c.png",
@@ -64,10 +65,10 @@
     "static/media/placeholderProfile.jpg": "/static/media/placeholderProfile.f7ffc0dd2f0d607008fe.jpg",
     "index.html": "/index.html",
     "main.311c3478.css.map": "/static/css/main.311c3478.css.map",
-    "main.67539815.js.map": "/static/js/main.67539815.js.map"
+    "main.0995e2cf.js.map": "/static/js/main.0995e2cf.js.map"
   },
   "entrypoints": [
     "static/css/main.311c3478.css",
-    "static/js/main.67539815.js"
+    "static/js/main.0995e2cf.js"
   ]
 }
