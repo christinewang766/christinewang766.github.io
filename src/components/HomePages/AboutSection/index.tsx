@@ -27,10 +27,10 @@ const AboutSection = () => {
         <AboutWrapper>
           <TextWrapper>
             <Heading data-aos="fade-left" data-aos-easing="linear">
-              "Hey, I'm Christine,"
+              "Hey, I'm Christine!"
             </Heading>
             <Description data-aos="fade-left" data-aos-easing="linear">
-              Creative, and analytical 3rd year computer science student at the University of British Columbia, with a strong foundation in logic and object-oriented programming. Christine has a year of Co-Op experience, and they have a passion for bringing a program to life using languages like TypeScript, JavaScript, Java, C++, HTML, and CSS.
+              Raised in the Lower Mainland and a proud UBC Computer Science graduate/survivor. Between whimsical side quests and chasing curiosities, I fell in love with bringing ideas to life through code, sweat, and sheer resilience against endless compiler errors. Interested in tech or nerding out? Feel free to <a style={{ color: "white" }} href="/#/message">have a chat</a> ♡
             </Description>
             <Button to="/about-me">
               Want to<br></br>know more?
