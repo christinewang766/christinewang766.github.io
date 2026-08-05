@@ -1,6 +1,7 @@
 {
   "name": "christine-portfolio",
   "version": "0.1.0",
+  "type": "module",
   "homepage": "http://christinewang766.github.io",
   "private": true,
   "dependencies": {

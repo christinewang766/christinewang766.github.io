@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Init from "./images/init.png";
+import Resize from "./images/resize_window.png";
+import ArrowImg from "./images/arrow.png";
 import Window from "./images/window.JPG";
 import Heart from "./images/heart.jpg";
 import Mask from "./images/mask.JPG";
@@ -28,10 +29,17 @@ import Tree2 from "./images/tree2.JPG";
 import Tree3 from "./images/tree3.JPG";
 import Bench from "./images/bench.JPG";
 import Box from "./images/box.JPG";
-import Final from "./images/final.JPG";
+import Final from "./images/final.png";
 import Collage from "./images/collage.png";
 import clawCursor from "./images/clawCursor.png";
 import Back from "./images/back.png";
+
+
+export const InitBackground = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background: #f1ebe1;
+`;
 
 export const BackButton = styled.button`
   outline: none;
@@ -71,13 +79,43 @@ export const ButtonWrap = styled.div`
   }
 `;
 
+export const ResizeImg = styled.img.attrs({
+  src: Resize,
+  alt: 'Drag and resize the corner of your browser window for a surprise :D'
+})`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+
+  @media screen and (max-width: 1300px) {
+    display: none; 
+  }
+`;
+
+export const Arrow = styled.img.attrs({
+  src: ArrowImg,
+  alt: 'Arrow pointing at the corner of the screen'
+})`
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 250px;
+  height: auto;
+
+  @media screen and (max-width: 1300px) {
+    display: none; 
+  }
+`;
+
 export const Img = styled.div`
   position: absolute;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
-  background: URL(${Init});
 
   @media screen and (max-width: 1300px) {
     background: URL(${PokeReveal1});
@@ -242,9 +280,13 @@ export const Img = styled.div`
   @media screen and (max-width: 550px) {
     background: URL(${Final});
     background-repeat: no-repeat;
+    top: 20%;
+    bottom: 20%;
     background-size: 100% auto;
   }
   @media screen and (max-width: 475px) {
+    top: 0;
+    bottom: 0;
     background: URL(${Collage});
     background-size: 100% 100%;
     background-repeat: no-repeat;
