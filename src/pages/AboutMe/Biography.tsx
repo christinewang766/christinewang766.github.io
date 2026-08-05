@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { AdjustBioContainer, PotButton } from "./AboutMeElements";
+import { AdjustBioContainer, PotButton, BioParagraph } from "./AboutMeElements";
 import { BioData } from "./BioData";
 
 const Collapsible = () => {
@@ -49,18 +49,9 @@ const Collapsible = () => {
           );
         })}
       </div>
-      <p
-        style={{
-          color: "#44624a",
-          fontFamily: "Lato",
-          fontSize: "15px",
-          maxWidth: '400px',
-          letterSpacing: '1px',
-          padding: '15px'
-        }}
-      >
+      <BioParagraph>
         {text}
-      </p>
+      </BioParagraph>
       <div></div>
     </AdjustBioContainer >
   );

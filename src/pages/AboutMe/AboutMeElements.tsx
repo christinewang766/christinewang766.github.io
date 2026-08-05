@@ -31,7 +31,6 @@ export const ButtonWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 20px 10px #f1ebe1;
 
   @media screen and (max-width: 400px) {
     width: 30px;
@@ -241,6 +240,7 @@ export const EducationDate = styled.p`
   color: #8ba888;
   padding-bottom: 10px;
 `;
+
 export const EducationDetails = styled.h4`
   font-family: "Lato";
   font-weight: bold;
@@ -266,4 +266,14 @@ export const Link = styled.a`
     transition: all 0.2s ease-in-out;
     cursor: URL(${clawCursor}), auto;
   }
+`;
+
+export const BioParagraph = styled.p`
+  color: #44624a;
+  font-family: Lato;
+  font-size: 15px;
+  max-width: 600px;
+  letter-spacing: 1px;
+  padding: 15px;
+  white-space: pre-wrap; 
 `;
