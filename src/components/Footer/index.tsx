@@ -4,7 +4,7 @@ import { IconType } from "react-icons";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
-import TurnipsImg from "./youFoundMe.png";
+import TurnipsImg from "./images/youFoundMe.png";
 
 import {
   FooterContainer,
@@ -31,7 +31,7 @@ const Footer = () => {
         href={props.link}
         target="_blank"
         rel="noopener noreferrer"
-        style={{ color: "white", fontSize: "24px" }}
+        style={{ color: "#44624a", fontSize: "24px" }}
       >
         <props.icon style={{ pointerEvents: "none" }} />
       </a>
@@ -40,7 +40,7 @@ const Footer = () => {
 
   function SpeechBubble(props: { speech: string }) {
     return (
-      <div style={{ background: '#c0cfb2', borderRadius: '100px', display: 'flex', padding: '7px', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ background: '#45624a', borderRadius: '100px', display: 'flex', padding: '7px', alignItems: 'center', justifyContent: 'center' }}>
         <p style={{ fontSize: '14px', color: 'white', fontWeight: '600', fontFamily: 'Lato', textAlign: 'center' }}>{props.speech}</p>
       </div>
     )
@@ -94,7 +94,7 @@ const Footer = () => {
               </SocialIcons>
             </SocialMediaWrap>
 
-            <Link style={{ color: 'white', fontFamily: 'Lato', paddingTop: '10px' }} to="/message">Message Me</Link>
+            <Link style={{ color: '#44624a', fontFamily: 'Lato', paddingTop: '10px' }} to="/message">Message Me</Link>
 
             <WebsiteRights>
               Christine Wang © {new Date().getFullYear()} All rights reserved.

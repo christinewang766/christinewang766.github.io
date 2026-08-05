@@ -13,7 +13,7 @@ import {
 } from "./NavbarElements";
 
 const Navbar = (props: { toggle: () => void }) => {
-  
+
   const NavOptions: { title: string; to: string }[] = [
     {
       title: "About",
@@ -41,7 +41,7 @@ const Navbar = (props: { toggle: () => void }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/" onClick={()=>scroll.scrollToTop()}>
+          <NavLogo to="/" onClick={() => scroll.scrollToTop()}>
             Christine Wang
           </NavLogo>
           <MobileIcon onClick={props.toggle}>

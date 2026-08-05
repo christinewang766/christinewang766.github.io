@@ -23,19 +23,19 @@ const Skills = () => {
   const skillsData: { title: string; details: string; src: string }[] = [
     {
       title: "Languages",
-      details: "TypeScript, JavaScript, Java, C++, CSS3, HTML5",
+      details: "TypeScript, JavaScript, SQL, Java, Python, HTML/CSS",
       src: languages,
 
     },
     {
-      title: "Libraries",
-      details: "React, Redux, CSS (Tailwind, styled-components), Java Swing",
+      title: "Frameworks & Libraries",
+      details: "React, Next.js, Node.js, Express, Redux, Tailwind CSS, styled-components",
       src: libraries,
     },
     {
-      title: "Development Tools",
+      title: "Testing & Tools",
       details:
-        "Git/GitHub, Node.js, Next.js, Figma, Visual Studio Code, IntelliJ IDEA",
+        "PostgreSQL, MySQL, REST APIs, Cypress, Mocha, JUnit, Git, Figma, Jira, pandas, scikit-learn",
       src: devtools,
     },
   ];

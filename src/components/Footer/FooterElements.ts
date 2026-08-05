@@ -1,17 +1,22 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Background from "./images/background.png";
+
 
 export const FooterContainer = styled.footer`
-background-color: #44624a;
+background: url(${Background});
+background-repeat: no-repeat;
+background-position: bottom;
 display: flex;
-align-items: center;
 justify-content: center;
+min-height: calc(100vh - 80px);
 `
 
 export const Grid = styled.div`
 display: grid;
 grid-template-columns: auto auto auto;
-align-items: center;
+align-items: end;
+margin-bottom: 20px;
 gap: 50px;
 
 @media screen and (max-width: 700px){
@@ -42,7 +47,7 @@ margin: 40px auto 0 auto;
 }
 `
 export const WebsiteRights = styled.small`
-color: #fff;
+color: #44624a;
 margin-bottom: 16px;
 padding-top: 20px;
 font-family: "Lato";
