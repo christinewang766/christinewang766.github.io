@@ -249,7 +249,7 @@ export const EducationDetails = styled.h4`
   color: #44624a;
 `;
 
-export const Button = styled.button`
+export const Link = styled.a`
   background: none;
   border: none;
   color: white;

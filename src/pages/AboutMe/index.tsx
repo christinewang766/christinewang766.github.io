@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import * as OpenAnything from "react-native-openanything";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop";
@@ -25,7 +24,7 @@ import {
   EducationDetails,
   EducationWrap,
   ResumeButtonWrap,
-  Button,
+  Link,
 } from "./AboutMeElements";
 
 const AboutMe = () => {
@@ -76,20 +75,14 @@ const AboutMe = () => {
             </SubHead>
 
             <ResumeButtonWrap>
-              <Button
-                onClick={() =>
-                  OpenAnything.Pdf(
-                    "https://drive.google.com/file/d/1AVtqf9FkbnX9s-DwVWOLLqh8nL_xTuVX/view?usp=sharing"
-                  )
-                }
-              >
+              <Link href="/Christine_Wang_2_pg_Resume.pdf" target="_blank" rel="noreferrer">
                 resume
-              </Button>
+              </Link>
             </ResumeButtonWrap>
             <EducationWrap>
               <Education>EDUCATION</Education>
               <EducationDate>
-                <b>2021-2025</b>
+                <b>2021-2026</b>
               </EducationDate>
               <div
                 style={{
