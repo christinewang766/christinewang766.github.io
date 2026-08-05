@@ -15,6 +15,7 @@ import {
   PhotoAlbum,
   SpeechWrap,
   Grid,
+  MessageLink,
 } from "./FooterElements";
 
 const Footer = () => {
@@ -62,7 +63,7 @@ const Footer = () => {
               <SpeechBubble speech={turnipsString[0]} />
               <SpeechBubble speech={turnipsString[1]} />
               <SpeechBubble speech={turnipsString[2]} />
-              <PhotoAlbum to="/turnips">♡ Album ♡</PhotoAlbum>
+              <PhotoAlbum to="/turnips" />
             </SpeechWrap>
           </div>
           <FooterWrap>
@@ -94,7 +95,7 @@ const Footer = () => {
               </SocialIcons>
             </SocialMediaWrap>
 
-            <Link style={{ color: '#44624a', fontFamily: 'Lato', paddingTop: '10px' }} to="/message">Message Me</Link>
+            <MessageLink to="/message">Message Me</MessageLink>
 
             <WebsiteRights>
               Christine Wang © {new Date().getFullYear()} All rights reserved.

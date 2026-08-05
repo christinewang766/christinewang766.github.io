@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Cheerio from "./cheerio.png";
 import clawCursor from "./clawCursor.png";
 
@@ -18,8 +18,16 @@ const Button = styled.div`
    background-size: 75px 55px;
    background-position: center;
 
-   &:hover{
-      cursor: URL(${clawCursor}), auto;
+ &:hover {
+     cursor: URL(${clawCursor}), auto;
+     animation: ${keyframes`
+       0% {
+         transform: translateY(0);
+       }
+       100% {
+         transform: translateY(-25px);
+       }
+     `} 0.3s ease-in-out infinite alternate;
    }
 `
 

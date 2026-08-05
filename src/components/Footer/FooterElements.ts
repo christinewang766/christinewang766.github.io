@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom'
 import Background from "./images/background.png";
-
+import Album from "./images/album.png";
+import clawCursor from "./images/clawCursor.png";
 
 export const FooterContainer = styled.footer`
 background: url(${Background});
@@ -65,9 +66,39 @@ padding-left: 20px;
 gap:5px;
 `
 export const PhotoAlbum = styled(Link)`
-font-size: 14px;
-color: 	#44624a;
-font-family: "Lato";
-text-align: center;
-text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-`
+border: none;
+  background: URL(${Album});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  min-width: 100px;
+  padding: 0; 
+
+  &:hover {
+    cursor: URL(${clawCursor}), auto;
+    animation: ${keyframes`
+      0% { transform: scale(1); }
+      30% { transform: scale(1.25, 0.75); }
+      40% { transform: scale(0.75, 1.25); }
+      50% { transform: scale(1.15, 0.85); }
+      65% { transform: scale(0.95, 1.05); }
+      75% { transform: scale(1.05, 0.95); }
+      100% { transform: scale(1); }
+    `} 0.6s ease-in-out;
+  }
+`;
+
+
+export const MessageLink = styled(Link)`
+color: #44624a;
+font-family: Lato;
+font-weight: 900;
+padding-top: 10px;
+
+&:hover {
+    transition: all 0.2s ease-in-out;
+    color: #c0cfb2;
+    text-shadow: -1px -1px 0 #44624a, 1px -1px 0 #44624a, -1px 1px 0 #44624a, 1px 1px 0 #44624a;
+}
+`;
