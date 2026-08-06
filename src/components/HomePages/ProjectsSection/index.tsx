@@ -21,6 +21,7 @@ const Projects = () => {
   }, []);
 
   interface CreateMapProps {
+    id: string;
     title: string;
     details: string;
     gif: string;
@@ -28,12 +29,13 @@ const Projects = () => {
   }
 
   function MappedProject({
-    title, details, gif, hoverGif
+    id, title, details, gif, hoverGif
   }: CreateMapProps) {
     const [hover, setHover] = useState(false);
 
     return (
       <div
+        id={id}
         style={{
           display: "flex",
           flexDirection: "column",
@@ -71,6 +73,7 @@ const Projects = () => {
           {ProjectData.map((proj, i) => {
             return (
               <MappedProject
+                id={proj.id}
                 title={proj.title}
                 details={proj.details}
                 gif={proj.gif}

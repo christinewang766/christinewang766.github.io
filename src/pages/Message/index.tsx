@@ -68,9 +68,8 @@ const Message = () => {
     };
 
     try {
-      const link =
-        "https://discord.com/api/webhooks/1059974716137406616/IG2I5gwZJKVRbDLU0qXOAflnDkrrgEZyd6Px-zV3kUcVWrgJKcAK5SUXzOvJs_"; // missing "sqeBWa" at the end
-      const data = await axios.post(link + "sqeBWa", body);
+      const link = import.meta.env.VITE_DISCORD_WEBHOOK;
+      const data = await axios.post(link, body);
       console.log(data);
     } catch (error) {
       console.error(error);

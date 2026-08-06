@@ -87,7 +87,7 @@ const Projects = () => {
 
           {ProjectData.map((props, i) => {
             return (
-              <GridWrap key={i}>
+              <GridWrap key={i} id={props.id}>
                 <TextBoxWrap>
                   <Hearts />
                   <TextWrap>

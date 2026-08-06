@@ -2,6 +2,7 @@ import postThat from './media/postit.png';
 import portfolio from './media/portfolio.png';
 
 export const ProjectData: {
+  id: string;
   title: string;
   repo: string;
   languages: string;
@@ -16,6 +17,7 @@ export const ProjectData: {
   img?: string;
 }[] = [
     {
+      id: "stats-with-class",
       title: "Stats With Class!",
       repo: "gitfront.io/r/christinewang766/zH55ZjAevRfD/CPSC-310-Sections-Insight/",
       languages: "Typescript, JavaScript, HTML, CSS",
@@ -26,6 +28,7 @@ export const ProjectData: {
       video: "https://www.dropbox.com/scl/fi/9ezp3zm6b64w08hlmhqjg/CPSC310-Insight-UBC-Sections.mp4?rlkey=eqyqhfqw1z93wzne1it84hvhn&st=4czlqkcf&raw=1",
       videoText: "Please expand the video!",
     }, {
+      id: "colour-love",
       title: "Colour Love",
       repo: "https://github.com/christinewang766/colour-love",
       languages: "Typescript, CSS, HTML",
@@ -40,6 +43,7 @@ export const ProjectData: {
       videoText: "Please expand the video!",
     },
     {
+      id: "post-that",
       title: "Post-That",
       repo: "https://github.com/stevenning203/nw-postcard",
       languages: "TypeScript, CSS, HTML",
@@ -50,6 +54,7 @@ export const ProjectData: {
       img: postThat,
     },
     {
+      id: "portfolio-website",
       title: "Portfolio Website",
       repo: "https://github.com/christinewang766/christinewang766.github.io",
       languages: "TypeScript, CSS, HTML",
@@ -60,6 +65,7 @@ export const ProjectData: {
       img: portfolio,
     },
     {
+      id: "cutesy-cards",
       title: "Cutesy Cards",
       repo: "https://github.com/christinewang766/CuteFlashCards/",
       languages: "Java",
