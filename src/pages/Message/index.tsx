@@ -79,7 +79,7 @@ const Message = () => {
     { label: "First Name", placeholder: "Your first name.." },
     { label: "Last Name", placeholder: "Your last name.." },
     { label: "Email", placeholder: "Your email.." },
-    { label: "Phone Number", placeholder: "Your phone number.." },
+    { label: "Phone Number", placeholder: "Please include the prefix.." },
   ];
 
   const messageData: { label: string; placeholder: string } = { label: "Message", placeholder: "What do you want Christine to know?" };
