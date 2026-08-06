@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import CatPot from "../images/catPot.png";
 import AoxPot from "../images/aoxPot.png";
 
@@ -110,5 +110,15 @@ color: white;
     background-repeat: no-repeat;
 background-size: 150px 150px;
 background-position: center;
+}
+`
+
+export const ChatLink = styled.a`
+color: white;
+
+&:hover {
+color: white;
+transition: all 0.2s ease-in-out;
+color: #010606;
 }
 `

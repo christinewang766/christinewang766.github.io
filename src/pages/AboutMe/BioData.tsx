@@ -5,7 +5,7 @@ import long from "./images/long.png";
 export const BioData: { title: string; bio: string; src: string }[] = [
   {
     title: "short",
-    bio: `Raised in a British Columbia fishing village, I didn't know much about tech. In 2017 I customized my Tumblr with HTML, which sparked a passion for programming. And now, following a UBC Computer Science degree and some internships, I am a new grad navigating a rapidly changing industry. I am dedicated to responsibly building a future where technology, people, and the environment collaborate...one compiler error at a time.`,
+    bio: `In 2017 I customized my Tumblr with HTML, which sparked a passion for programming. And now, I am a UBC CPSC new grad navigating a rapidly changing industry. I am dedicated to responsibly building a future where technology, people, and the environment collaborate...one compiler error at a time.`,
     src: `url(${short})`,
   },
   {

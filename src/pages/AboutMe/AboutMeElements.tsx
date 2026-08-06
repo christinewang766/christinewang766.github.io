@@ -1,7 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Back from "./images/back.png";
 import monet from "./images/monet.png";
 import clawCursor from "./images/clawCursor.png";
+
+export const ResponsiveContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 800px) {
+  display: flex;
+  flex-direction: column;
+  }
+`;
+
+
+export const ProfileEducationWrap = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
 export const BackButton = styled.button`
   outline: none;
@@ -48,9 +63,20 @@ export const ResumeButtonWrap = styled.div`
   margin-bottom: 20px;
   margin-top: -10px;
 
-  &:hover {
-    cursor: URL(${clawCursor}), auto;
-  }
+   &:hover {
+      cursor: URL(${clawCursor}), auto;
+      animation: ${keyframes`
+        0% { transform: scale(1); }
+        30% { transform: scale(1.25, 0.75); }
+        40% { transform: scale(0.75, 1.25); }
+        50% { transform: scale(1.15, 0.85); }
+        65% { transform: scale(0.95, 1.05); }
+        75% { transform: scale(1.05, 0.95); }
+        100% { transform: scale(1); }
+      `} 0.6s ease-in-out;
+    }
+
+
 `;
 
 export const TitleWrap = styled.div`
@@ -149,6 +175,7 @@ export const AdjustBioContainer = styled.div`
   justify-content: center;
   color: #44624a;
   height:fit-content;
+  max-width: 100vw;
 `;
 
 export const ABBtnWrap = styled.div`

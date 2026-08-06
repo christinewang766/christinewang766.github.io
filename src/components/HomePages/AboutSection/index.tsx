@@ -12,7 +12,8 @@ import {
   Description,
   ImgWrap,
   Img,
-  Button
+  Button,
+  ChatLink
 } from "./AboutElements";
 
 const AboutSection = () => {
@@ -30,7 +31,7 @@ const AboutSection = () => {
               "Hey, I'm Christine!"
             </Heading>
             <Description data-aos="fade-left" data-aos-easing="linear">
-              Raised in the Lower Mainland and a proud UBC Computer Science graduate/survivor. Between whimsical side quests and chasing curiosities, I fell in love with bringing ideas to life through code, sweat, and sheer resilience against endless compiler errors. Interested in tech or nerding out? Feel free to <a style={{ color: "white" }} href="/#/message">have a chat</a> ♡
+              Raised in the Lower Mainland and a proud UBC Computer Science graduate/survivor. Between whimsical side quests and chasing curiosities, I fell in love with bringing ideas to life through code, sweat, and sheer resilience against endless compiler errors. Interested in tech or nerding out? Feel free to <ChatLink href="/#/message">have a chat</ChatLink> ♡
             </Description>
             <Button to="/about-me">
               Want to<br></br>know more?

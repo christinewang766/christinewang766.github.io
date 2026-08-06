@@ -9,6 +9,8 @@ import Meow from "./images/meow.mp3";
 import UBC from "./images/ubc.png";
 
 import {
+  ResponsiveContainer,
+  ProfileEducationWrap,
   BackButton,
   ButtonWrap,
   TitleWrap,
@@ -46,62 +48,67 @@ const AboutMe = () => {
       <Confetti width={width} height={height} opacity={opacity} />
       <ScrollToTop />
       <AboutContainer>
-        <ButtonWrap>
-          <BackButton onClick={() => navigate(-1)}>GO BACK</BackButton>
-        </ButtonWrap>
-        <TitleWrap>
-          <Title>ABOUT ME</Title>
-        </TitleWrap>
-        <div style={{ display: 'inline-flex' }}>
-          <TextWrapper>
-            <ImgWrap>
-              <button
-                style={{ border: "none" }}
-                onClick={() => {
-                  setPlaySound(!playSound);
-                  if (opacity === 1) {
-                    setOpacity(0);
-                  } else {
-                    setOpacity(1);
-                  }
-                }}
-              >
-                <Img src={Profile} />
-              </button>
-            </ImgWrap>
-            <Heading>"I'm Christine."</Heading>
-            <SubHead>
-              <i>she/(any pronouns, really)</i>
-            </SubHead>
+        <ResponsiveContainer>
+          <ProfileEducationWrap>
+            <ButtonWrap>
+              <BackButton onClick={() => navigate(-1)}>GO BACK</BackButton>
+            </ButtonWrap>
+            <TitleWrap>
+              <Title>ABOUT ME</Title>
+            </TitleWrap>
+            <div style={{ display: 'inline-flex' }}>
+              <TextWrapper>
+                <ImgWrap>
+                  <button
+                    style={{ border: "none" }}
+                    onClick={() => {
+                      setPlaySound(!playSound);
+                      if (opacity === 1) {
+                        setOpacity(0);
+                      } else {
+                        setOpacity(1);
+                      }
+                    }}
+                  >
+                    <Img src={Profile} />
+                  </button>
+                </ImgWrap>
+                <Heading>"I'm Christine."</Heading>
+                <SubHead>
+                  <i>she/(any pronouns, really)</i>
+                </SubHead>
 
-            <ResumeButtonWrap>
-              <Link href="/Christine_Wang_2_pg_Resume.pdf" target="_blank" rel="noreferrer">
-                resume
-              </Link>
-            </ResumeButtonWrap>
-            <EducationWrap>
-              <Education>EDUCATION</Education>
-              <EducationDate>
-                <b>2021-2026</b>
-              </EducationDate>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <img style={{ maxWidth: "15%" }} src={UBC} alt="ubc logo" />
-              </div>
-              <EducationDetails>
-                University of British Columbia<br></br>BSc majoring in Computer
-                Science
-              </EducationDetails>
-            </EducationWrap>
-          </TextWrapper>
+                <ResumeButtonWrap>
+                  <Link href="/Christine_Wang_2_pg_Resume.pdf" target="_blank" rel="noreferrer">
+                    resume
+                  </Link>
+                </ResumeButtonWrap>
+                <EducationWrap>
+                  <Education>EDUCATION</Education>
+                  <EducationDate>
+                    <b>2021-2026</b>
+                  </EducationDate>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <img style={{ maxWidth: "15%" }} src={UBC} alt="ubc logo" />
+                  </div>
+                  <EducationDetails>
+                    University of British Columbia<br></br>BSc majoring in Computer
+                    Science
+                  </EducationDetails>
+                </EducationWrap>
+              </TextWrapper>
+            </div>
+          </ProfileEducationWrap>
+
           <Collapsible />
-        </div>
-      </AboutContainer>
+        </ResponsiveContainer>
+      </AboutContainer >
     </>
   );
 };
