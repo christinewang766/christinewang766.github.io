@@ -69,8 +69,7 @@ const Message = () => {
 
     try {
       const link = import.meta.env.VITE_DISCORD_WEBHOOK;
-      const data = await axios.post(link, body);
-      console.log(data);
+      await axios.post(link, body);
     } catch (error) {
       console.error(error);
     }
