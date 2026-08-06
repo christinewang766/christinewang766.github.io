@@ -13,12 +13,12 @@
 
 ### The way I brag about this site on my resume is as follows:
 
+- Designed and implemented a modern Vite React web app and integrating tools such as styled-components and Router for dynamic and efficient development.
 - Engineered responsive user interfaces optimized for seamless performance across various devices and screen sizes.
-- Designed and implemented a modern, visually engaging landing page leveraging popular frameworks like React and integrating tools such as styled-components and Router for dynamic and efficient development.
 - Developed a bold, maximalist front-end to highlight my expertise, creating a memorable user experience that effectively combines aesthetics with functionality.
 
 **_Note:_** when executing the website for the first time, run:
 
 `npm install --legacy-peer-deps`
 
-`npm start`
+`npm run dev`
