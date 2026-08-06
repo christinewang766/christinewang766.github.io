@@ -37,6 +37,8 @@ jobs:
 
       - name: Build website
         run: npm run build
+        env: VITE_DISCORD_WEBHOOK: ${{ vars.VITE_DISCORD_WEBHOOK }} 
+
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
