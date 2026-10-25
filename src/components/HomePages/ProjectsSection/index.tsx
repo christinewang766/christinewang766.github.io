@@ -35,7 +35,6 @@ const Projects = () => {
 
     return (
       <div
-        id={id}
         style={{
           display: "flex",
           flexDirection: "column",
@@ -56,10 +55,10 @@ const Projects = () => {
         >
           <DescriptionWrap>
             <Description>{details}</Description>
-            <ReadMore to="/projects">Read More</ReadMore>
+            <ReadMore to={`/projects#${id}`}>Read More</ReadMore>
           </DescriptionWrap>
         </ImgWrap>
-        <Title to="/projects">{title}</Title>
+        <Title to={`/projects#${id}`}>{title}</Title>
       </div>
     );
   }

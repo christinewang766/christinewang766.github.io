@@ -6,7 +6,7 @@ import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Turnips from "./pages/Turnips";
 import ScrollUpButton from "./components/ScrollUpButton";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Aos from "aos";
 
 function App() {

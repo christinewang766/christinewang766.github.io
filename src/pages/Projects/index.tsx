@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Container,
   ButtonWrap,
@@ -21,11 +21,22 @@ import {
   PostImg,
 } from "./ProjectsElements";
 import ScrollToTop from "../../components/ScrollToTop";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { ProjectData } from "./ProjectData";
 
 const Projects = () => {
   let navigate = useNavigate();
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.slice(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
 
   function VidOrImg(props: {
     img?: string;
