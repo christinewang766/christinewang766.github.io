@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { IconType } from "react-icons";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
@@ -77,7 +76,7 @@ const Footer = () => {
 
                 <SingleSocialIcon
                   ariaLabel="LinkedIn"
-                  link="https://www.linkedin.com/in/christine-wang-b690a818a/"
+                  link="https://www.linkedin.com/in/christine-w-b690a818a/"
                   icon={FaLinkedin}
                 />
 

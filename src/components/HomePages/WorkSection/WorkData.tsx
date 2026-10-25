@@ -34,7 +34,7 @@ export const WorkData: {
       company: "More info!",
       position: "Check out my LinkedIn!",
       duration: "I dabbled in a few other things too.",
-      link: "https://www.linkedin.com/in/christine-wang-b690a818a/"
+      link: "https://www.linkedin.com/in/christine-w-b690a818a/"
     },
   ];
 
